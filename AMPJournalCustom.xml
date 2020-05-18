@@ -229,17 +229,12 @@ body#layout #side-content {float:left;width:44%;}
 
         <header class='navbar px-2 pt-2' id='top-content'>
           <section class='navbar-section'>
-          <a class='btn btn-primary' expr:href='data:blog.homepageUrl'>🏠 Home</a>
+          <a class='btn btn-primary btn-lg' expr:href='data:blog.homepageUrl'>🏠 Home</a>
           </section>
-
-<section class='navbar-section'> Minjem Goceng Bro
-&lt;a class=&#39;act-btn&#39; [text]=&quot;nasmode ? &#39;🌛&#39; : &#39;🌛&#39;&quot; on=&quot;tap:AMP.setState({nasmode: !nasmode})&quot;&gt;🌛&lt;/a&gt;
-</section>
-
           <section class='navbar-section'>
             <form action='/search' class='sample-form' method='GET' target='_top'>
               <div class='input-group input-inline'>
-                <input class='form-input' name='q' placeholder='search...' type='search'/>
+                <input class='form-input' name='q' placeholder='Search by keyword' type='search'/>
                 <input name='max-results' type='hidden' value='8'/>
                 <button class='btn btn-primary input-group-btn' type='submit'>Search</button>
               </div>
@@ -290,10 +285,18 @@ body#layout #side-content {float:left;width:44%;}
         </amp-animation>
 
         <div id='main-content'>
+&lt;a class=&#39;act-btn&#39; [text]=&quot;nasmode ? &#39;💡&#39; : &#39;💡&#39;&quot; on=&quot;tap:AMP.setState({nasmode: !nasmode})&quot;&gt;💡&lt;/a&gt;
+<div class='container py-2'>
+  <div class='collumns'>
+<amp-img alt='Slot iklan' height='90' layout='responsive' src='https://1.bp.blogspot.com/-CqvBkQZl-3I/XsJmUnTfArI/AAAAAAAAB3Y/K3velmRHtIIFh8fyRl0SupD8-XzWSW7eQCLcBGAsYHQ/s1600/leaderboard-placeholder.png' width='720'>
+  <amp-img alt='Slot Iklan' layout='fill' src='https://1.bp.blogspot.com/-CqvBkQZl-3I/XsJmUnTfArI/AAAAAAAAB3Y/K3velmRHtIIFh8fyRl0SupD8-XzWSW7eQCLcBGAsYHQ/s1600/leaderboard-placeholder.png'>
+  </amp-img>
+</amp-img>
 
+</div>
+</div>
           <div class='container py-2'>
             <div class='columns'>
-
               <b:section class='column col-xs-12 col-8' id='content'>
                 <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
                   <b:widget-settings>
@@ -1164,7 +1167,7 @@ body#layout #side-content {float:left;width:44%;}
                     <b:widget id='Label2' locked='true' title='&lt;b&gt;Labels&lt;/b&gt;' type='Label' version='2' visible='true'>
                       <b:widget-settings>
                         <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-                        <b:widget-setting name='display'>LIST</b:widget-setting>
+                        <b:widget-setting name='display'>CLOUD</b:widget-setting>
                         <b:widget-setting name='selectedLabelsList'/>
                         <b:widget-setting name='showType'>ALL</b:widget-setting>
                         <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
@@ -1304,14 +1307,7 @@ body#layout #side-content {float:left;width:44%;}
     </section>
 
     <!-- Default JavaScript -->&lt;!--<body/>--&gt;<!-- /Default JavaScript -->
- <amp-ad
-      width="300"
-      height="250"
-      type="a9"
-      data-aax_size="300x250"
-      data-aax_pubname="test123"
-      data-aax_src="302"
-    >
+ <amp-ad data-aax_pubname='test123' data-aax_size='300x250' data-aax_src='302' height='250' type='a9' width='300'>
     </amp-ad> 
  &lt;/body&gt;
 </html>
